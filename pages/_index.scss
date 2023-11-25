@@ -3,6 +3,7 @@
 // start hero section
 .hero_section {
   height: calc(100vh - 52px);
+  position: relative;
 
   .container {
     height: 100%;
@@ -39,11 +40,19 @@
 
     .image {
       text-align: center;
+      animation: fade-up 3s linear infinite;
 
       img {
         width: 90%;
       }
     }
+  }
+
+  .info_icon {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    animation: animation-popup-5 3s linear 0s infinite alternate;
   }
 }
 
@@ -205,11 +214,38 @@
     }
   }
 
+  .filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 18px;
+
+    .btn_filter {
+      background-color: transparent;
+      border: none;
+      font-weight: 600;
+      padding-bottom: 0px;
+
+      &.active {
+        border-bottom: 2px solid $primary-color;
+      }
+    }
+  }
+
   .boxs {
     padding-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 30px;
+
+    &.grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 30px;
+    }
+
+    .owl-nav {
+      display: none;
+    }
 
     .box {
       background-color: white;
@@ -275,9 +311,20 @@
       }
     }
 
+    .filter {
+      row-gap: 5px;
+
+      .btn_filter {
+        font-size: 14px;
+      }
+    }
+
     .boxs {
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 15px;
+      &.grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        gap: 30px;
+      }
 
       .box {
         .iamge {
@@ -300,3 +347,141 @@
   }
 }
 // end courses_section
+
+// start top_category_section
+.top_category_section {
+  .head {
+    text-align: center;
+
+    .title {
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    .desc {
+      color: gray;
+    }
+  }
+
+  .boxs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+
+    .box {
+      padding: 40px 30px;
+      border-radius: 8px;
+      background-image: url(../images/category1.png);
+      background-position: center;
+      background-size: cover;
+      height: 200px;
+      color: white;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:nth-child(2) {
+        background-image: url(../images/category2.png);
+      }
+
+      &:nth-child(3) {
+        background-image: url(../images/category3.png);
+      }
+      &:nth-child(4) {
+        background-image: url(../images/category4.png);
+      }
+      &:nth-child(5) {
+        background-image: url(../images/category5.png);
+      }
+      &:nth-child(6) {
+        background-image: url(../images/category6.png);
+      }
+
+      .text {
+        h4 {
+          font-size: 19px;
+          margin-bottom: 0;
+        }
+
+        .num_courses {
+          font-size: 14px;
+          color: gray;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .top_category_section {
+    .head {
+      .title {
+        font-size: 22px;
+        margin-bottom: 0;
+      }
+
+      .desc {
+        font-size: 14px;
+      }
+    }
+
+    .boxs {
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 15px;
+
+      .box {
+        padding: 20px;
+        height: 140px;
+      }
+    }
+  }
+}
+// end top_category_section
+
+// animation
+@keyframes cir360 {
+  0% {
+    rotate: 360deg;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(20px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+
+@keyframes animation-popup-5 {
+  0% {
+    transform: scale(0.2) rotate(0deg);
+  }
+
+  40% {
+    transform: scale(0.5) rotate(180deg);
+  }
+  80% {
+    transform: scale(1) rotate(360deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}

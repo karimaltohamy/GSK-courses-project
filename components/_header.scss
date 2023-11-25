@@ -28,7 +28,7 @@ header {
 
     .logo {
       img {
-        width: 125px;
+        width: 100px;
       }
 
       svg {
@@ -119,7 +119,7 @@ header {
     .line {
       .logo {
         img {
-          width: 100px;
+          width: 85px;
         }
 
         svg {
@@ -287,3 +287,53 @@ header {
   }
 }
 // end menu_mobile
+
+// start secound_hero
+.secound_hero {
+  height: 250px;
+
+  .container {
+    height: 100%;
+
+    .content {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      h2 {
+        font-size: 40px;
+      }
+
+      p {
+        a {
+          &:last-child {
+            color: $primary-color !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .secound_hero {
+    height: 150px;
+
+    .container {
+      .content {
+        h2 {
+          font-size: 26px;
+        }
+
+        p {
+          a {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+// end secound_hero

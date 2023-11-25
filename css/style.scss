@@ -1,6 +1,12 @@
 @use "../components/header";
 @use "../components/footer";
 @use "../pages/index";
+@use "../pages/sign";
+@use "../pages/course-details";
+@use "../pages/contact";
+@use "../pages/blog";
+@use "../pages/blog-details";
+@use "../pages/about";
 
 @import "../components/variables";
 

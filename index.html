@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GSK courses project</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/carsosuel.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -15,6 +16,9 @@
     <!-- bootstarp -->
     <link rel="stylesheet" href="css/bootstrap.css" />
     <script src="js/bootstrap.js"></script>
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <main>
@@ -26,12 +30,17 @@
               <img src="./images/logo.png" alt="logo" loading="lazy" />
             </a>
             <div class="links">
-              <a href="index.html" class="link">Home</a>
-              <a href="#about" class="link">About Us</a>
-              <a href="#our-courses" class="link">Our Courses</a>
-              <a href="#contact-us" class="link">Contact Us</a>
+              <a href="index.html" class="link active">Home</a>
+              <a href="about.html" class="link">About Us</a>
+              <a href="our-courses.html" class="link">Our Courses</a>
+              <a href="blog.html" class="link">Blog</a>
+              <a href="contact-us.html" class="link">Contact Us</a>
             </div>
             <div class="info">
+              <a href="#" class="lang">
+                <img src="images/ar-lang.svg" alt="lang-img" loading="lazy" />
+                <span>عربي</span>
+              </a>
               <a href="login.html" class="btn_fill">Login</a>
               <a href="register.html" class="btn_outline">Register</a>
               <div class="icon_menu">
@@ -59,18 +68,59 @@
       </header>
       <!-- start header -->
 
+      <!-- start menu mobile -->
+      <div class="overflow"></div>
+      <div class="menu_mobile">
+        <div class="head">
+          <img src="./images/logo.png" alt="logo" loading="lazy" />
+
+          <i class="fa-solid fa-xmark btn_close_menu"></i>
+        </div>
+        <div class="links">
+          <a href="index.html" class="link active">Home</a>
+          <a href="about.html" class="link">About Us</a>
+          <a href="our-courses.html" class="link">Our Courses</a>
+          <a href="blog.html" class="link">Blog</a>
+          <a href="contact-us.html" class="link">Contact Us</a>
+        </div>
+      </div>
+      <!-- end menu mobile -->
+
       <!-- start hero section -->
       <div class="hero_section">
         <div class="container">
           <div class="line line_section">
             <div class="text">
-              <span class="subtitle">EXCELLENCE IN EDUCATION</span>
-              <h2 class="title">Start Better Learning Future From Here</h2>
-              <p class="desc">
+              <span
+                class="subtitle"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                >EXCELLENCE IN EDUCATION</span
+              >
+              <h2
+                class="title"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+              >
+                Start Better Learning Future From Here
+              </h2>
+              <p
+                class="desc"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="400"
+              >
                 Empower yourself with the knowledge and skills gained through
                 online education! The key to your future!
               </p>
-              <div class="btns">
+              <div
+                class="btns"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+              >
                 <a href="#" class="btn_fill">Take away</a>
                 <a href="#" class="btn_outline">Find The Course</a>
               </div>
@@ -84,21 +134,47 @@
             </div>
           </div>
         </div>
+        <div class="info_icon">
+          <img src="./images/info_icon.png" alt="info-icon" loading="lazy" />
+        </div>
       </div>
       <!-- end hero section -->
     </main>
 
     <!-- start about section -->
-    <div class="about_section section">
+    <div class="about_section section" id="about">
       <div class="container">
         <div class="line line_section">
-          <div class="image">
+          <div
+            class="image"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
             <img src="./images/join.png" alt="about" loading="lazy" />
           </div>
           <div class="text">
-            <span class="subtitle">About Us</span>
-            <h3 class="title">Global For Science & Knowledge</h3>
-            <p class="desc">
+            <span
+              class="subtitle"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+              >About Us</span
+            >
+            <h3
+              class="title"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+            >
+              Global For Science & Knowledge
+            </h3>
+            <p
+              class="desc"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
               Is An Academy And E-learning Platform That Aims To Provide
               Distance & Blended Learning (Trainings, Courses and
               certifications) For Students And Graduates To be Capable Of
@@ -107,7 +183,12 @@
               Make Trainees Getting Experiences Of Reality Simulation.
             </p>
             <div class="features">
-              <div class="feature">
+              <div
+                class="feature"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+              >
                 <div class="icon">
                   <i class="fa-solid fa-book-open-reader"></i>
                 </div>
@@ -120,7 +201,12 @@
                   </p>
                 </div>
               </div>
-              <div class="feature">
+              <div
+                class="feature"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="600"
+              >
                 <div class="icon">
                   <i class="fa-solid fa-building-columns"></i>
                 </div>
@@ -140,247 +226,290 @@
     <!-- end about section -->
 
     <!-- start courses section -->
-    <div class="courses_section section">
+    <div class="courses_section section" id="our-courses">
       <div class="container">
-        <div class="head">
+        <div
+          class="head"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
           <h3 class="title">Examples of medical exercises</h3>
         </div>
         <div class="boxs">
-          <div class="box">
-            <div class="iamge">
-              <img
-                src="./images/course-img1.png"
-                alt="course-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="content">
-              <div class="text">
-                <h4 class="title_box">
-                  Pharmacogenomics - Pharmacogenomics training
-                </h4>
-                <p class="desc">
-                  Certified by the Egyptian Society for Pharmacogenomics
-                </p>
+          <div class="owl-carousel owl-theme courses-carousel">
+            <a
+              href="course-details.html"
+              class="box"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <div class="iamge">
+                <img
+                  src="./images/course-img1.png"
+                  alt="course-img"
+                  loading="lazy"
+                />
               </div>
-
-              <div class="bottom_box">
-                <div class="num_leasons">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-6 h-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
-                    ></path>
-                  </svg>
-
-                  12 Leasons
+              <div class="content">
+                <div class="text">
+                  <h4 class="title_box">
+                    Pharmacogenomics - Pharmacogenomics training
+                  </h4>
+                  <p class="desc">
+                    Certified by the Egyptian Society for Pharmacogenomics
+                  </p>
                 </div>
 
-                <h6 class="price">900 EGP</h6>
-              </div>
-            </div>
-          </div>
-          <div class="box">
-            <div class="iamge">
-              <img src="./images/course-img2.png" alt="" loading="lazy" />
-            </div>
-            <div class="content">
-              <div class="text">
-                <h4 class="title_box">
-                  Pharmacogenomics - Pharmacogenomics training
-                </h4>
-                <p class="desc">
-                  Certified by the Egyptian Society for Pharmacogenomics
-                </p>
-              </div>
+                <div class="bottom_box">
+                  <div class="num_leasons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
+                      ></path>
+                    </svg>
 
-              <div class="bottom_box">
-                <div class="num_leasons">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-6 h-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
-                    ></path>
-                  </svg>
+                    12 Leasons
+                  </div>
 
-                  12 Leasons
+                  <h6 class="price">900 EGP</h6>
+                </div>
+              </div>
+            </a>
+            <a
+              href="course-details.html"
+              class="box"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              <div class="iamge">
+                <img src="./images/course-img2.png" alt="" loading="lazy" />
+              </div>
+              <div class="content">
+                <div class="text">
+                  <h4 class="title_box">
+                    Pharmacogenomics - Pharmacogenomics training
+                  </h4>
+                  <p class="desc">
+                    Certified by the Egyptian Society for Pharmacogenomics
+                  </p>
                 </div>
 
-                <h6 class="price">900 EGP</h6>
-              </div>
-            </div>
-          </div>
-          <div class="box">
-            <div class="iamge">
-              <img src="./images/course-img3.png" alt="" loading="lazy" />
-            </div>
-            <div class="content">
-              <div class="text">
-                <h4 class="title_box">
-                  Pharmacogenomics - Pharmacogenomics training
-                </h4>
-                <p class="desc">
-                  Certified by the Egyptian Society for Pharmacogenomics
-                </p>
-              </div>
+                <div class="bottom_box">
+                  <div class="num_leasons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
+                      ></path>
+                    </svg>
 
-              <div class="bottom_box">
-                <div class="num_leasons">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-6 h-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
-                    ></path>
-                  </svg>
+                    12 Leasons
+                  </div>
 
-                  12 Leasons
+                  <h6 class="price">900 EGP</h6>
+                </div>
+              </div>
+            </a>
+            <a
+              href="course-details.html"
+              class="box"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="600"
+            >
+              <div class="iamge">
+                <img src="./images/course-img3.png" alt="" loading="lazy" />
+              </div>
+              <div class="content">
+                <div class="text">
+                  <h4 class="title_box">
+                    Pharmacogenomics - Pharmacogenomics training
+                  </h4>
+                  <p class="desc">
+                    Certified by the Egyptian Society for Pharmacogenomics
+                  </p>
                 </div>
 
-                <h6 class="price">900 EGP</h6>
-              </div>
-            </div>
-          </div>
-          <div class="box">
-            <div class="iamge">
-              <img
-                src="./images/course-img4.png"
-                alt="course-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="content">
-              <div class="text">
-                <h4 class="title_box">
-                  Pharmacogenomics - Pharmacogenomics training
-                </h4>
-                <p class="desc">
-                  Certified by the Egyptian Society for Pharmacogenomics
-                </p>
-              </div>
+                <div class="bottom_box">
+                  <div class="num_leasons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
+                      ></path>
+                    </svg>
 
-              <div class="bottom_box">
-                <div class="num_leasons">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-6 h-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
-                    ></path>
-                  </svg>
+                    12 Leasons
+                  </div>
 
-                  12 Leasons
+                  <h6 class="price">900 EGP</h6>
+                </div>
+              </div>
+            </a>
+            <a
+              href="course-details.html"
+              class="box"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <div class="iamge">
+                <img
+                  src="./images/course-img4.png"
+                  alt="course-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="content">
+                <div class="text">
+                  <h4 class="title_box">
+                    Pharmacogenomics - Pharmacogenomics training
+                  </h4>
+                  <p class="desc">
+                    Certified by the Egyptian Society for Pharmacogenomics
+                  </p>
                 </div>
 
-                <h6 class="price">900 EGP</h6>
-              </div>
-            </div>
-          </div>
-          <div class="box">
-            <div class="iamge">
-              <img src="./images/course-img5.png" alt="" loading="lazy" />
-            </div>
-            <div class="content">
-              <div class="text">
-                <h4 class="title_box">
-                  Pharmacogenomics - Pharmacogenomics training
-                </h4>
-                <p class="desc">
-                  Certified by the Egyptian Society for Pharmacogenomics
-                </p>
-              </div>
+                <div class="bottom_box">
+                  <div class="num_leasons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
+                      ></path>
+                    </svg>
 
-              <div class="bottom_box">
-                <div class="num_leasons">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-6 h-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
-                    ></path>
-                  </svg>
+                    12 Leasons
+                  </div>
 
-                  12 Leasons
+                  <h6 class="price">900 EGP</h6>
+                </div>
+              </div>
+            </a>
+            <a
+              href="course-details.html"
+              class="box"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              <div class="iamge">
+                <img src="./images/course-img5.png" alt="" loading="lazy" />
+              </div>
+              <div class="content">
+                <div class="text">
+                  <h4 class="title_box">
+                    Pharmacogenomics - Pharmacogenomics training
+                  </h4>
+                  <p class="desc">
+                    Certified by the Egyptian Society for Pharmacogenomics
+                  </p>
                 </div>
 
-                <h6 class="price">900 EGP</h6>
-              </div>
-            </div>
-          </div>
-          <div class="box">
-            <div class="iamge">
-              <img src="./images/course-img6.png" alt="" loading="lazy" />
-            </div>
-            <div class="content">
-              <div class="text">
-                <h4 class="title_box">
-                  Pharmacogenomics - Pharmacogenomics training
-                </h4>
-                <p class="desc">
-                  Certified by the Egyptian Society for Pharmacogenomics
-                </p>
-              </div>
+                <div class="bottom_box">
+                  <div class="num_leasons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
+                      ></path>
+                    </svg>
 
-              <div class="bottom_box">
-                <div class="num_leasons">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-6 h-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
-                    ></path>
-                  </svg>
+                    12 Leasons
+                  </div>
 
-                  12 Leasons
+                  <h6 class="price">900 EGP</h6>
+                </div>
+              </div>
+            </a>
+            <a
+              href="course-details.html"
+              class="box"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="600"
+            >
+              <div class="iamge">
+                <img src="./images/course-img6.png" alt="" loading="lazy" />
+              </div>
+              <div class="content">
+                <div class="text">
+                  <h4 class="title_box">
+                    Pharmacogenomics - Pharmacogenomics training
+                  </h4>
+                  <p class="desc">
+                    Certified by the Egyptian Society for Pharmacogenomics
+                  </p>
                 </div>
 
-                <h6 class="price">900 EGP</h6>
+                <div class="bottom_box">
+                  <div class="num_leasons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
+                      ></path>
+                    </svg>
+
+                    12 Leasons
+                  </div>
+
+                  <h6 class="price">900 EGP</h6>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         <div class="bottom">
@@ -393,127 +522,288 @@
     <!-- start courses section -->
     <div class="courses_section section">
       <div class="container">
-        <div class="head">
+        <div
+          class="head"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
           <h3 class="title">Examples of engineering exercises</h3>
         </div>
         <div class="boxs">
-          <div class="box">
-            <div class="iamge">
-              <img
-                src="./images/course-img7.png"
-                alt="course-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="content">
-              <div class="text">
-                <h4 class="title_box">
-                  Pharmacogenomics - Pharmacogenomics training
-                </h4>
-                <p class="desc">
-                  Certified by the Egyptian Society for Pharmacogenomics
-                </p>
+          <div class="owl-carousel owl-theme courses-carousel">
+            <a
+              href="course-details.html"
+              class="box"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <div class="iamge">
+                <img
+                  src="./images/course-img7.png"
+                  alt="course-img"
+                  loading="lazy"
+                />
               </div>
-
-              <div class="bottom_box">
-                <div class="num_leasons">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-6 h-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
-                    ></path>
-                  </svg>
-
-                  12 Leasons
+              <div class="content">
+                <div class="text">
+                  <h4 class="title_box">
+                    Pharmacogenomics - Pharmacogenomics training
+                  </h4>
+                  <p class="desc">
+                    Certified by the Egyptian Society for Pharmacogenomics
+                  </p>
                 </div>
 
-                <h6 class="price">900 EGP</h6>
-              </div>
-            </div>
-          </div>
-          <div class="box">
-            <div class="iamge">
-              <img src="./images/course-img8.png" alt="" loading="lazy" />
-            </div>
-            <div class="content">
-              <div class="text">
-                <h4 class="title_box">
-                  Pharmacogenomics - Pharmacogenomics training
-                </h4>
-                <p class="desc">
-                  Certified by the Egyptian Society for Pharmacogenomics
-                </p>
-              </div>
+                <div class="bottom_box">
+                  <div class="num_leasons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
+                      ></path>
+                    </svg>
 
-              <div class="bottom_box">
-                <div class="num_leasons">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-6 h-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
-                    ></path>
-                  </svg>
+                    12 Leasons
+                  </div>
 
-                  12 Leasons
+                  <h6 class="price">900 EGP</h6>
+                </div>
+              </div>
+            </a>
+            <a
+              href="course-details.html"
+              class="box"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              <div class="iamge">
+                <img src="./images/course-img8.png" alt="" loading="lazy" />
+              </div>
+              <div class="content">
+                <div class="text">
+                  <h4 class="title_box">
+                    Pharmacogenomics - Pharmacogenomics training
+                  </h4>
+                  <p class="desc">
+                    Certified by the Egyptian Society for Pharmacogenomics
+                  </p>
                 </div>
 
-                <h6 class="price">900 EGP</h6>
-              </div>
-            </div>
-          </div>
-          <div class="box">
-            <div class="iamge">
-              <img src="./images/course-img9.png" alt="" loading="lazy" />
-            </div>
-            <div class="content">
-              <div class="text">
-                <h4 class="title_box">
-                  Pharmacogenomics - Pharmacogenomics training
-                </h4>
-                <p class="desc">
-                  Certified by the Egyptian Society for Pharmacogenomics
-                </p>
-              </div>
+                <div class="bottom_box">
+                  <div class="num_leasons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
+                      ></path>
+                    </svg>
 
-              <div class="bottom_box">
-                <div class="num_leasons">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-6 h-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
-                    ></path>
-                  </svg>
+                    12 Leasons
+                  </div>
 
-                  12 Leasons
+                  <h6 class="price">900 EGP</h6>
+                </div>
+              </div>
+            </a>
+            <a
+              href="course-details.html"
+              class="box"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="600"
+            >
+              <div class="iamge">
+                <img src="./images/course-img9.png" alt="" loading="lazy" />
+              </div>
+              <div class="content">
+                <div class="text">
+                  <h4 class="title_box">
+                    Pharmacogenomics - Pharmacogenomics training
+                  </h4>
+                  <p class="desc">
+                    Certified by the Egyptian Society for Pharmacogenomics
+                  </p>
                 </div>
 
-                <h6 class="price">900 EGP</h6>
+                <div class="bottom_box">
+                  <div class="num_leasons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
+                      ></path>
+                    </svg>
+
+                    12 Leasons
+                  </div>
+
+                  <h6 class="price">900 EGP</h6>
+                </div>
               </div>
-            </div>
+            </a>
+            <a
+              href="course-details.html"
+              class="box"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <div class="iamge">
+                <img
+                  src="./images/course-img7.png"
+                  alt="course-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="content">
+                <div class="text">
+                  <h4 class="title_box">
+                    Pharmacogenomics - Pharmacogenomics training
+                  </h4>
+                  <p class="desc">
+                    Certified by the Egyptian Society for Pharmacogenomics
+                  </p>
+                </div>
+
+                <div class="bottom_box">
+                  <div class="num_leasons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
+                      ></path>
+                    </svg>
+
+                    12 Leasons
+                  </div>
+
+                  <h6 class="price">900 EGP</h6>
+                </div>
+              </div>
+            </a>
+            <a
+              href="course-details.html"
+              class="box"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              <div class="iamge">
+                <img src="./images/course-img8.png" alt="" loading="lazy" />
+              </div>
+              <div class="content">
+                <div class="text">
+                  <h4 class="title_box">
+                    Pharmacogenomics - Pharmacogenomics training
+                  </h4>
+                  <p class="desc">
+                    Certified by the Egyptian Society for Pharmacogenomics
+                  </p>
+                </div>
+
+                <div class="bottom_box">
+                  <div class="num_leasons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
+                      ></path>
+                    </svg>
+
+                    12 Leasons
+                  </div>
+
+                  <h6 class="price">900 EGP</h6>
+                </div>
+              </div>
+            </a>
+            <a
+              href="course-details.html"
+              class="box"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="600"
+            >
+              <div class="iamge">
+                <img src="./images/course-img9.png" alt="" loading="lazy" />
+              </div>
+              <div class="content">
+                <div class="text">
+                  <h4 class="title_box">
+                    Pharmacogenomics - Pharmacogenomics training
+                  </h4>
+                  <p class="desc">
+                    Certified by the Egyptian Society for Pharmacogenomics
+                  </p>
+                </div>
+
+                <div class="bottom_box">
+                  <div class="num_leasons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
+                      ></path>
+                    </svg>
+
+                    12 Leasons
+                  </div>
+
+                  <h6 class="price">900 EGP</h6>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
         <div class="bottom">
@@ -522,5 +812,182 @@
       </div>
     </div>
     <!-- end  courses section -->
+
+    <!-- start top category -->
+    <div class="top_category_section section">
+      <div class="container">
+        <div
+          class="head"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
+          <h2 class="title">Top Categories</h2>
+          <p class="desc">Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+        <div class="boxs">
+          <div
+            class="box"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <div class="text">
+              <h4>Web Development</h4>
+              <span class="num_courses">473+ Courses</span>
+            </div>
+          </div>
+          <div
+            class="box"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
+            <div class="text">
+              <h4>Digital Marketing</h4>
+              <span class="num_courses">473+ Courses</span>
+            </div>
+          </div>
+          <div
+            class="box"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          >
+            <div class="text">
+              <h4>Photography</h4>
+              <span class="num_courses">473+ Courses</span>
+            </div>
+          </div>
+          <div
+            class="box"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <div class="text">
+              <h4>Graphic Design</h4>
+              <span class="num_courses">473+ Courses</span>
+            </div>
+          </div>
+          <div
+            class="box"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
+            <div class="text">
+              <h4>Social Sciences</h4>
+              <span class="num_courses">473+ Courses</span>
+            </div>
+          </div>
+          <div
+            class="box"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          >
+            <div class="text">
+              <h4>Personal Development</h4>
+              <span class="num_courses">473+ Courses</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end top category -->
+
+    <!-- start footer -->
+    <footer id="contact-us">
+      <div class="container">
+        <div class="row line">
+          <div class="col-12 col-md-3">
+            <div class="logo">
+              <img src="images/logo.png" alt="logo" loading="lazy" />
+            </div>
+            <p class="desc">
+              Our specialist will perform the necessary repairs right in your
+              home. Branded warranty for repairs 3 years.
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <h4>Contact</h4>
+            <div class="contact">
+              <div class="item">
+                <h6>Mail:</h6>
+                <span>info@gsk-edu.com</span>
+              </div>
+              <div class="item">
+                <h6>Phone:</h6>
+                <span>01016733568 - 01024248054</span>
+              </div>
+              <div class="item">
+                <h6>Address:</h6>
+                <span
+                  >MTC Mall, Mehwar El Kafrawy From El-Hosary Square, 6th
+                  October, Giza, Egypt﻿</span
+                >
+              </div>
+            </div>
+            <div class="social_media">
+              <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+              <a href="#">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="bottom_footer">
+          <p>© 2021 All rights reserved. Developed at 5Code.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/carosuel.js"></script>
+    <script>
+      $(".courses-carousel").owlCarousel({
+        loop: true,
+        margin: 15,
+        responsiveClass: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: true,
+          },
+          700: {
+            items: 2,
+            nav: false,
+          },
+          900: {
+            items: 3,
+            nav: false,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
